@@ -15,8 +15,7 @@ function App() {
                 console.error(error);
             });
     }, []);
-
-    // Add search functionality here...
+    
     const filteredData = data.filter((beer) =>
         beer.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
